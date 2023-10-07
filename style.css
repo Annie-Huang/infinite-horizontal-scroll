@@ -52,8 +52,18 @@ body {
   overflow: hidden;
 
   /* This create the effect that it transparent on the top and white at the bottom */
-  -webkit-mask: linear-gradient(transparent, white);
-  mask: linear-gradient(transparent, white);
+  /*-webkit-mask: linear-gradient(transparent, white);*/
+  /*mask: linear-gradient(transparent, white);*/
+
+  /* This create the effect that it transparent on the left and right side */
+  -webkit-mask: linear-gradient(
+    90deg,
+    transparent,
+    white 20%,
+    white 80%,
+    transparent
+  );
+  mask: linear-gradient(90deg, transparent, white 20%, white 80%, transparent);
 }
 
 .scroller[data-animated='true'] .scroller__inner {
