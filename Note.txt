@@ -1,0 +1,6 @@
+Create an infinite horizontal scroll animation (https://www.youtube.com/watch?v=iLmBy-HKIAw)
+
+https://codepen.io/kevinpowell/pen/BavVLra
+https://github.com/Annie-Huang/infinite-horizontal-scroll
+
+---------------------------------------------------------------------
