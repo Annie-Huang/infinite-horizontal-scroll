@@ -35,7 +35,7 @@ body {
 }
 
 .scroller {
-  max-width: 400px;
+  max-width: 600px;
   outline: 3px solid lime;
 }
 
@@ -50,6 +50,10 @@ body {
 
 .scroller[data-animated='true'] {
   overflow: hidden;
+
+  /* This create the effect that it transparent on the top and white at the bottom */
+  -webkit-mask: linear-gradient(transparent, white);
+  mask: linear-gradient(transparent, white);
 }
 
 .scroller[data-animated='true'] .scroller__inner {
