@@ -47,3 +47,11 @@ body {
   /* For default when user choose reduce motion */
   flex-wrap: wrap;
 }
+
+.scroller[data-animated='true'] {
+  overflow: hidden;
+}
+
+.scroller[data-animated='true'] .scroller__inner {
+  flex-wrap: nowrap;
+}
