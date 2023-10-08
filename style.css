@@ -49,6 +49,7 @@ body {
 }
 
 .scroller[data-animated='true'] {
+  border: 5px solid lime; /* once we add the mask below, outline from above cannot be seen */
   overflow: hidden;
 
   /* This create the effect that it transparent on the top and white at the bottom */
