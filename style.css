@@ -82,6 +82,13 @@ body {
   --_animation-direction: forwards;
 }
 
+.scroller[data-speedn='slow'] {
+  --_animation-duration: 120s;
+}
+.scroller[data-speed='fast'] {
+  --_animation-duration: 20s;
+}
+
 @keyframes scroll {
   to {
     /*transform: translate(100%);*/
