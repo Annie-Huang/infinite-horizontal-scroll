@@ -49,7 +49,7 @@ body {
 }
 
 .scroller[data-animated='true'] {
-  border: 5px solid lime; /* once we add the mask below, outline from above cannot be seen */
+  /*border: 5px solid lime; !* once we add the mask below, outline from above cannot be seen *!*/
   overflow: hidden;
 
   /* This create the effect that it transparent on the top and white at the bottom */
@@ -70,7 +70,8 @@ body {
 .scroller[data-animated='true'] .scroller__inner {
   width: max-content;
   flex-wrap: nowrap;
-  animation: scroll 20s linear infinite;
+  /*animation: scroll 20s linear infinite;*/
+  animation: scroll var(--_animation-duration, 40s) linear infinite;
 }
 
 @keyframes scroll {
