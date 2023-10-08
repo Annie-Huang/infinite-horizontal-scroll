@@ -22,3 +22,6 @@ Double up the <li> list and replace thing when the scroll reaches to 50% without
     transform: translate(calc(-50% - 0.5rem)); /* 0.5rem is 1/2 of the gap value */
   }
 }
+
+Solution 2 to have continue infinite rolling to the left:
+Do exactly the solution 1 does but use the javascript to do the duplication.
