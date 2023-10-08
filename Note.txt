@@ -4,3 +4,21 @@ https://codepen.io/kevinpowell/pen/BavVLra
 https://github.com/Annie-Huang/infinite-horizontal-scroll
 
 ---------------------------------------------------------------------
+
+Solution 1 to have continue infinite rolling to the left:
+
+Double up the <li> list and replace thing when the scroll reaches to 50% without user notice.
+      <ul class="tag-list scroller__inner">
+        <li>HTML</li>
+        ...
+        <li>HTML</li>
+        ...
+      </ul>
+.scroller[data-animated='true'] .scroller__inner {
+  width: max-content;
+}
+@keyframes scroll {
+  to {
+    transform: translate(calc(-50% - 0.5rem)); /* 0.5rem is 1/2 of the gap value */
+  }
+}
